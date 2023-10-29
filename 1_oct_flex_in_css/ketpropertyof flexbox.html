@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key properties</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        table{
+            border-collapse: collapse;
+            width:100%;  
+        }
+        table td{
+            border: 1px solid black;
+            font-size: x-large;
+        }
+        table td:nth-child(even){
+            background-color:pink ;
+        }
+        table td:nth-child(odd){
+            background-color: lightskyblue;
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>justify-content</td>
+                <td>align-items</td>
+                <td>gap</td>
+                <td>flex-direction</td>
+                <td>flex-wrap</td>
+        </tr>
+        <tr>
+            <td> Defines how the browser distributes space between and around items along the main axis of the container.<br>
+               <b> Values:</b><br>
+                <b><u>flex-start:</b> </u>Items are packed toward the start of the main axis.<br>
+                <b><u> flex-end:</b></u> Items are packed toward the end of the main axis.<br>
+                <b><u> center:</b></u> Items are centered along the main axis.<br>
+                 <b><u>space-between:</b></u> Items are evenly distributed with the first item at the start and the last item at the end.<br>
+                <b> <u>space-around:</b></u> Items are evenly distributed with equal space around them.<br>
+                <b><u>space-evenly:</b></u> Items are evenly distributed with equal space around them, including at the start and end.<br>
+            </td>
+            <td>Defines how the browser aligns items along the cross axis of the container.<br>
+                <b>Values:</b><br>
+                <b></b><u> flex-start:</u>Items are aligned at the start of the cross axis.<br>
+                 <b><u> flex-end:</b></u> Items are aligned at the end of the cross axis.<br>
+                 <b><u>center:</b></u> Items are centered along the cross axis.<br>
+                <b><u>baseline:</b></u> Items are aligned such that their baselines align.<br>
+                <b><u>stretch:</b></u> Items are stretched to fill the container along the cross axis.<br>
+            </td>
+            <td>Sets the size of the gap between items in a flex container.<br>
+               <b> Values:</b><br>
+                A length value (e.g., 10px, 2em).<br>
+                A percentage value (e.g., 5%).<br>
+                normal: The default value, which is browser-specific and typically equivalent to 1em.<br>
+                </td>
+            <td> Establishes the main axis along which flex items are placed in the flex container.<br>
+           <b>Values:</b><br>
+           <b><u>row:</b></u> Items are placed along the main axis (horizontal) in the order they appear in the source code.<br>
+           <b><u>row-reverse:</b></u> Items are placed in the opposite order of the source code.<br>
+           <b><u>column:</b></u> Items are placed along the cross axis (vertical).<br>
+            <b><u>column-reverse: </b></u>Items are placed in the opposite order along the cross axis.<br>
+            </td>
+            <td>Specifies whether flex items are forced onto a single line or can be wrapped onto multiple lines.<br>
+              <b>Values:</b> <br>
+              <b><u>nowrap:</b></u> All flex items are on one line (the default behavior).<br>
+              <b><u>wrap:</b></u> Flex items wrap onto multiple lines if needed.<br>
+              <b><u>wrap-reverse:</b></u>Flex items wrap onto multiple lines in the reverse order.<br>
+                </td>
+        </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
